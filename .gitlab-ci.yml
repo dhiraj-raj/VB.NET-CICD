@@ -19,7 +19,7 @@ build:
   image: mono:latest
   script:
     - pwd
-    - msbuild 
+    - MSBUILD_PATH/msbuild.exe
         /p:Configuration="Release"
         /p:Platform="Any CPU" 
         "./vbproject.sln"
