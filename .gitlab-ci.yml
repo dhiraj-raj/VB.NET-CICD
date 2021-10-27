@@ -12,8 +12,8 @@ stages:
   - test
   - deploy
 
-build_job:
-  stage: build-mono
+build:
+  stage: build
   image: mono:latest
   script:
     - pwd
