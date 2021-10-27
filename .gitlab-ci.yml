@@ -24,10 +24,7 @@ build_job:
  artifacts:
    expire_in: 365 days  #artifcats will be stored only 365 days after this it will expire  
    paths:
-     - '.\sourcecode\project.sln\bin\Release\Publish\'
-     - '.\sourcecode\project.sln\bin\Publish\'
-     - '$env:TEST_FOLDER'
-     - '.\$env:MSTEST_PATH\*.*'
+     - './vbproject/bin/Release/'
 
 .test_job:
  stage: test
