@@ -4,7 +4,7 @@ variables:
   TEST_FOLDER: 'Tests\bin\Release'
   DEPLOY_FOLDER: 'P:\Projects\YourApp\Builds'
   NUGET_PATH: 'C:\NuGet\nuget.exe'
-  MSBUILD_PATH: 'C:\Program Files (x86)\MSBuild\14.0\Bin\msbuild.exe'
+  MSBUILD_PATH: 'C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\MSBuild.exe'
   NUNIT_PATH: 'C:\Program Files (x86)\NUnit.org\nunit-console\nunit3-console.exe'
 
 stages:
@@ -19,7 +19,6 @@ build:
   image: mono:latest
   script:
     - pwd
-    - nuget restore ./vbproject.sln
     - msbuild 
         /p:Configuration="Release"
         /p:Platform="Any CPU" 
