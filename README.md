@@ -1,11 +1,10 @@
 # vb-project
-This is a vb.net project, done by @dhpradeep as on 10th Nov 2017
+This is a vb.net project
 
 you can test this application by only download :
 > vbproject/bin folder, and run vbproject.exe file.
 
-If you need any help just comment or mail me
-mail address: dhpradeep25@gmail.com
+
 
 <i><b> project details: </b></i>
 
